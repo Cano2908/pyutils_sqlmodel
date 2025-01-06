@@ -1,0 +1,6 @@
+build
+python-dotenv==1.0.1
+psycopg2-binary==2.9.10
+setuptools==75.6.0
+sqlmodel==0.0.22
+twine==6.0.1
