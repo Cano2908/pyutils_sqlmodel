@@ -12,6 +12,6 @@
 - Implementacion a conexion a diferentes db como SQLite y MySQL
 - Uso de nueva variable de entorno SGDB que tendra el  valor de postgres, mysql o sqlite
 
-# [0.2.01] - 2025-01-11
+# [0.2.1] - 2025-01-11
 ## FIX
 - Conexion a Sqlite corregida y logs desactivados a la hora de usar el get_engine
