@@ -16,7 +16,7 @@ def get_engine():
     SGDB = os.getenv("SGDB")
 
     if SGDB == "sqlite":
-        DATABASE_URL = "sqlite:///{NAME_DB}.db"
+        DATABASE_URL = f"sqlite:///{NAME_DB}.db"
     elif SGDB == "postgres":
         DATABASE_URL = f"postgresql://{USER_DB}:{PASS_DB}@{HOST_DB}:{PORT_DB}/{NAME_DB}"
     elif SGDB == "mysql":
@@ -26,4 +26,4 @@ def get_engine():
     else:
         raise ValueError("SGDB not supported: {SGDB}")
 
-    return create_engine(DATABASE_URL, echo=True)
+    return create_engine(DATABASE_URL, echo=False)
