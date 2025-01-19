@@ -15,3 +15,8 @@
 # [0.2.1] - 2025-01-11
 ## FIX
 - Conexion a Sqlite corregida y logs desactivados a la hora de usar el get_engine
+
+# [0.2.2] - 2025-01-18
+## FIX 
+- Modificacion para tener create_all sin configurar algo de sqlmodel
+- Variables para ver los logs o no

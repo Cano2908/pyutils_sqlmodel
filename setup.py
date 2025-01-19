@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="pyutils-sqlmodel",
-    version="0.2.1",
+    version="0.2.2",
     description="Configuracion inicial hacia conexion a base de datos con SQLModel y un repositorio con las operaciones CRUD utilizando genericos para el ahorro de codigo",
     author="Christian Carballo Cano",
     author_url="https://www.linkedin.com/in/cano2908/",
