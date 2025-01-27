@@ -20,3 +20,7 @@
 ## FIX 
 - Modificacion para tener create_all sin configurar algo de sqlmodel
 - Variables para ver los logs o no
+
+# [0.2.4] - 2025-01-27
+## FIX
+- Option de pasar URL completa para conectarse a una db en la nube

@@ -6,6 +6,7 @@ from typing import Optional
 
 load_dotenv()
 
+URL = os.getenv("URL")
 USER_DB = os.getenv("USER_DB")
 PASS_DB = os.getenv("PASS_DB")
 HOST_DB = os.getenv("HOST_DB")
@@ -16,7 +17,9 @@ NAME_DB = os.getenv("NAME_DB")
 def get_engine(view_logs: Optional[bool] = False):
     SGDB = os.getenv("SGDB")
 
-    if (SGDB == "sqlite"):
+    if URL is not None:
+        DATABASE_URL = URL
+    elif (SGDB == "sqlite"):
         DATABASE_URL = f"sqlite:///{NAME_DB}.db"
     elif (SGDB == "postgres"):
         DATABASE_URL = f"postgresql://{USER_DB}:{PASS_DB}@{HOST_DB}:{PORT_DB}/{NAME_DB}"
